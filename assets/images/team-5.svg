@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none">
+  <defs>
+    <linearGradient id="avatar-bg-5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ring-5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="24" fill="url(#avatar-bg-5)"/>
+  <circle cx="150" cy="150" r="115" stroke="url(#ring-5)" stroke-width="3" stroke-dasharray="6 4" stroke-opacity="0.4"/>
+  <!-- Casual Tech Hoodie -->
+  <path d="M70 270 C70 215, 105 195, 150 195 C195 195, 230 215, 230 270 Z" fill="#3b82f6"/>
+  <path d="M125 195 Q150 250 175 195 Z" fill="#1d4ed8"/>
+  <rect x="135" y="165" width="30" height="35" rx="6" fill="#fed7aa"/>
+  <ellipse cx="150" cy="130" rx="42" ry="48" fill="#ffedd5"/>
+  <!-- Modern fade hair -->
+  <path d="M108 120 C108 75, 130 65, 150 65 C170 65, 192 75, 192 120 C190 90, 175 80, 150 80 C125 80, 110 90, 108 120 Z" fill="#0f172a"/>
+  <!-- Headphones on neck -->
+  <path d="M110 180 C110 205, 190 205, 190 180" stroke="#f59e0b" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="134" cy="126" r="3.5" fill="#0f172a"/>
+  <circle cx="166" cy="126" r="3.5" fill="#0f172a"/>
+  <path d="M140 152 Q150 160 160 152" stroke="#475569" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

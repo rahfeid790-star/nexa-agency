@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bg-grad-3" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#061c28"/>
+      <stop offset="100%" stop-color="#0f2b3c"/>
+    </linearGradient>
+    <linearGradient id="teal-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-grad-3)" rx="16"/>
+  <circle cx="700" cy="120" r="160" fill="#2dd4bf" fill-opacity="0.12" filter="blur(60px)"/>
+  <circle cx="150" cy="420" r="150" fill="#0284c7" fill-opacity="0.15" filter="blur(60px)"/>
+
+  <g filter="url(#shadow3)">
+    <rect x="50" y="40" width="700" height="420" rx="12" fill="#0b1720" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <!-- Bar -->
+    <rect x="50" y="40" width="700" height="44" rx="12" fill="#132431"/>
+    <circle cx="76" cy="62" r="5" fill="#ef4444"/>
+    <circle cx="94" cy="62" r="5" fill="#f59e0b"/>
+    <circle cx="112" cy="62" r="5" fill="#10b981"/>
+    <text x="400" y="67" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">novahealth.ai/clinical/telehealth-portal</text>
+
+    <!-- App Top Bar -->
+    <rect x="50" y="84" width="700" height="48" fill="#0e1f2b" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="80" y="114" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="16" font-weight="700">✚ NOVA<tspan fill="#ffffff">HEALTH</tspan></text>
+    <rect x="610" y="96" width="115" height="26" rx="13" fill="#0284c7"/>
+    <text x="667" y="113" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Live Consult (HD)</text>
+
+    <!-- Patient Vitals Card -->
+    <g transform="translate(80, 150)">
+      <rect width="210" height="130" rx="8" fill="#132431" stroke="rgba(45,212,191,0.2)"/>
+      <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">PATIENT HEART RATE</text>
+      <text x="20" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="700">72 <tspan fill="#2dd4bf" font-size="14">BPM</tspan></text>
+      <!-- ECG Wave -->
+      <path d="M 20 100 L 60 100 L 70 85 L 80 115 L 90 75 L 100 110 L 110 100 L 190 100" fill="none" stroke="#2dd4bf" stroke-width="2.5"/>
+    </g>
+
+    <g transform="translate(310, 150)">
+      <rect width="210" height="130" rx="8" fill="#132431" stroke="rgba(255,255,255,0.06)"/>
+      <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">BLOOD OXYGEN (SpO2)</text>
+      <text x="20" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="700">99.2%</text>
+      <rect x="20" y="95" width="170" height="8" rx="4" fill="#1e3a4f"/>
+      <rect x="20" y="95" width="160" height="8" rx="4" fill="#38bdf8"/>
+    </g>
+
+    <g transform="translate(540, 150)">
+      <rect width="180" height="130" rx="8" fill="#132431" stroke="rgba(255,255,255,0.06)"/>
+      <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">DIAGNOSTIC AI RISK</text>
+      <text x="20" y="65" fill="#10b981" font-family="system-ui, sans-serif" font-size="26" font-weight="700">Optimal</text>
+      <text x="20" y="95" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Score: 98.4 / 100</text>
+    </g>
+
+    <!-- Consultation Window & Timeline -->
+    <g transform="translate(80, 300)">
+      <rect width="440" height="140" rx="8" fill="#132431"/>
+      <text x="20" y="30" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Active Consultation: Dr. Elena Vance, MD</text>
+      <rect x="20" y="48" width="60" height="60" rx="30" fill="#0284c7"/>
+      <circle cx="50" cy="72" r="16" fill="#bae6fd"/>
+      <text x="95" y="70" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="500">Video &amp; Biometric stream active</text>
+      <text x="95" y="92" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">● End-to-end encrypted • HIPAA Compliant</text>
+    </g>
+
+    <g transform="translate(540, 300)">
+      <rect width="180" height="140" rx="8" fill="#132431"/>
+      <text x="20" y="30" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Upcoming Sessions</text>
+      <rect x="15" y="45" width="150" height="36" rx="6" fill="#0b1720"/>
+      <text x="25" y="62" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">14:30 - MRI Review</text>
+      <text x="25" y="74" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Patient #A-901</text>
+      <rect x="15" y="90" width="150" height="36" rx="6" fill="#0b1720"/>
+      <text x="25" y="107" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">16:00 - Cardiology</text>
+      <text x="25" y="119" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Patient #B-403</text>
+    </g>
+  </g>
+</svg>

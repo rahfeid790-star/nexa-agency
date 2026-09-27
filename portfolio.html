@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Nexa Agency - Showcase of Modern Digital Solutions</title>
+  <meta name="description" content="Explore selected client projects by Nexa Agency. Featuring fintech apps, headless e-commerce, cloud dashboards, and high-conversion UI/UX systems.">
+  <meta name="keywords" content="portfolio, case studies, software projects, web app examples, ui ux design showcase, ecommerce case studies">
+  <meta name="author" content="Nexa Agency">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio | Nexa Agency">
+  <meta property="og:description" content="Explore 6 award-winning client solutions engineered for high performance, scale, and delightful UX.">
+  <meta property="og:image" content="assets/images/project-finpulse.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <span>🚀 Explore our recent case studies. <a href="contact.html">Let's build your next flagship product &rarr;</a></span>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg nexa-navbar" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/favicon.svg" alt="Nexa Agency Logo" class="brand-icon">
+        <span>NEXA<span class="gradient-text">.AGENCY</span></span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-primary"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn d-none d-lg-inline-flex" aria-label="Toggle theme" title="Toggle dark/light mode">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <a href="contact.html" class="btn btn-nexa-primary">
+            <span>Get a Quote</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header Banner -->
+  <header class="page-banner">
+    <div class="container">
+      <div class="breadcrumb-custom mb-3">
+        <a href="index.html" class="text-muted">Home</a>
+        <span class="text-muted">/</span>
+        <span class="text-primary">Portfolio</span>
+      </div>
+      <h1 class="page-title">Crafted With Precision, Built To Scale</h1>
+      <p class="section-desc">
+        Explore a curated selection of our work across fintech, high-end e-commerce, cloud telemetry, healthcare, and digital architecture.
+      </p>
+    </div>
+  </header>
+
+  <!-- Portfolio Section with Interactive Filters -->
+  <section class="py-5 my-4">
+    <div class="container">
+
+      <!-- Filter Controls Bar -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5 reveal">
+        <button type="button" class="portfolio-filter-btn active" data-filter="all">All Projects</button>
+        <button type="button" class="portfolio-filter-btn" data-filter="web-dev">Web Development</button>
+        <button type="button" class="portfolio-filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button type="button" class="portfolio-filter-btn" data-filter="ui-ux">UI/UX Design</button>
+        <button type="button" class="portfolio-filter-btn" data-filter="saas">SaaS &amp; Cloud</button>
+      </div>
+
+      <!-- Projects Grid (6 Mock Projects) -->
+      <div class="row g-4" id="portfolioGrid">
+
+        <!-- Project 1: FinPulse Cloud -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal" data-category="web-dev saas">
+          <div class="portfolio-card"
+               data-title="FinPulse Cloud"
+               data-badge="Fintech SaaS"
+               data-client="FinPulse Global Capital"
+               data-deliverable="Real-Time Banking &amp; Cashflow Analytics Platform"
+               data-desc="High-performance banking and payment routing platform supporting multi-currency cross-border settlement with zero packet drop and automated risk scoring."
+               data-tech="Next.js 14, Node.js, PostgreSQL, Redis, Stripe Connect, Tailwind CSS"
+               data-metric="+240% Processing Speed"
+               data-image="assets/images/project-finpulse.svg">
+            <div class="portfolio-image-wrapper">
+              <span class="portfolio-badge">Fintech SaaS</span>
+              <img src="assets/images/project-finpulse.svg" alt="FinPulse Cloud Dashboard" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Web Development</span>
+                <span class="portfolio-tag">SaaS &amp; Cloud</span>
+                <span class="portfolio-tag">Fintech</span>
+              </div>
+              <h4 class="portfolio-title">FinPulse Cloud</h4>
+              <p class="small text-muted flex-grow-1">Institutional cashflow intelligence engine handling over 140k daily automated payments with sub-15ms execution.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary-subtle">
+                <span class="fw-bold text-primary small">+240% Speed</span>
+                <button type="button" class="btn btn-sm btn-nexa-outline" data-bs-toggle="modal" data-bs-target="#projectDetailModal">
+                  <span>View Case Study</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Aura Luxe -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal reveal-delay-1" data-category="ecommerce ui-ux">
+          <div class="portfolio-card"
+               data-title="Aura Luxe Fashion"
+               data-badge="Luxury E-Commerce"
+               data-client="Aura Luxe Paris"
+               data-deliverable="Headless Multi-Region Storefront &amp; 3D Fitting Experience"
+               data-desc="Luxury fashion flagship featuring customized editorial collection stories, 3D interactive cloth simulations, and sub-second global checkout across 45 currencies."
+               data-tech="Shopify Plus, React, Three.js, Algolia, Tailwind CSS, Vercel Edge"
+               data-metric="+185% Checkout Lift"
+               data-image="assets/images/project-auraluxe.svg">
+            <div class="portfolio-image-wrapper">
+              <span class="portfolio-badge">E-Commerce</span>
+              <img src="assets/images/project-auraluxe.svg" alt="Aura Luxe Luxury E-Commerce" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">E-Commerce</span>
+                <span class="portfolio-tag">UI/UX Design</span>
+                <span class="portfolio-tag">Headless Store</span>
+              </div>
+              <h4 class="portfolio-title">Aura Luxe Fashion</h4>
+              <p class="small text-muted flex-grow-1">High-fashion storefront delivering an editorial magazine aesthetic with instant headless catalog browsing.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary-subtle">
+                <span class="fw-bold text-primary small">+185% Conversion</span>
+                <button type="button" class="btn btn-sm btn-nexa-outline" data-bs-toggle="modal" data-bs-target="#projectDetailModal">
+                  <span>View Case Study</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: NovaHealth AI -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal reveal-delay-2" data-category="web-dev ui-ux">
+          <div class="portfolio-card"
+               data-title="NovaHealth Telehealth"
+               data-badge="Digital Health"
+               data-client="NovaHealth Medical Systems"
+               data-deliverable="HIPAA-Compliant Patient Portal &amp; Live Teleconsultations"
+               data-desc="End-to-end encrypted medical web app enabling instant remote consultations, automated IoT vital sync (heart rate, SpO2), and digital pharmacy fulfillment."
+               data-tech="Vue.js 3, WebRTC, Python FastAPI, Docker, AWS HealthLake"
+               data-metric="99.2% Treatment Adherence"
+               data-image="assets/images/project-novahealth.svg">
+            <div class="portfolio-image-wrapper">
+              <span class="portfolio-badge">HealthTech</span>
+              <img src="assets/images/project-novahealth.svg" alt="NovaHealth Telehealth Portal" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Web Development</span>
+                <span class="portfolio-tag">UI/UX Design</span>
+                <span class="portfolio-tag">HIPAA WebRTC</span>
+              </div>
+              <h4 class="portfolio-title">NovaHealth Telehealth</h4>
+              <p class="small text-muted flex-grow-1">Patient-centric clinical portal connecting 50,000+ patients with certified healthcare providers in real-time.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary-subtle">
+                <span class="fw-bold text-primary small">99.2% Adherence</span>
+                <button type="button" class="btn btn-sm btn-nexa-outline" data-bs-toggle="modal" data-bs-target="#projectDetailModal">
+                  <span>View Case Study</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: OmniMetrics -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal" data-category="saas web-dev">
+          <div class="portfolio-card"
+               data-title="OmniMetrics Cloud"
+               data-badge="SaaS &amp; Cloud"
+               data-client="OmniMetrics Technologies"
+               data-deliverable="Distributed Infrastructure Telemetry &amp; APM Engine"
+               data-desc="Real-time multi-cluster telemetry dashboard processing 4.2 million events per second with instant anomaly detection and Kubernetes topology mapping."
+               data-tech="React, TypeScript, Apache Kafka, Go Microservices, ClickHouse"
+               data-metric="4.2M req/sec Handled"
+               data-image="assets/images/project-omnimetrics.svg">
+            <div class="portfolio-image-wrapper">
+              <span class="portfolio-badge">DevOps SaaS</span>
+              <img src="assets/images/project-omnimetrics.svg" alt="OmniMetrics Telemetry Dashboard" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">SaaS &amp; Cloud</span>
+                <span class="portfolio-tag">Web Development</span>
+                <span class="portfolio-tag">Kubernetes</span>
+              </div>
+              <h4 class="portfolio-title">OmniMetrics Cloud</h4>
+              <p class="small text-muted flex-grow-1">Enterprise observability dashboard aggregating live memory, compute throughput, and microservice latencies.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary-subtle">
+                <span class="fw-bold text-primary small">99.999% SLA</span>
+                <button type="button" class="btn btn-sm btn-nexa-outline" data-bs-toggle="modal" data-bs-target="#projectDetailModal">
+                  <span>View Case Study</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Zenith Living -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal reveal-delay-1" data-category="ui-ux">
+          <div class="portfolio-card"
+               data-title="Zenith Living"
+               data-badge="UI/UX Design"
+               data-client="Zenith Luxury Real Estate"
+               data-deliverable="Architectural Property Portal &amp; 3D Floorplan Explorer"
+               data-desc="Bespoke luxury real estate discovery experience with full 3D interactive architectural blueprints, private tour bookings, and client concierge messaging."
+               data-tech="Figma, WebGL, Next.js, Framer Motion, Mapbox GL"
+               data-metric="$120M Volume Sold"
+               data-image="assets/images/project-zenith.svg">
+            <div class="portfolio-image-wrapper">
+              <span class="portfolio-badge">UI/UX Design</span>
+              <img src="assets/images/project-zenith.svg" alt="Zenith Living Real Estate" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">UI/UX Design</span>
+                <span class="portfolio-tag">3D Interactive</span>
+                <span class="portfolio-tag">Luxury Real Estate</span>
+              </div>
+              <h4 class="portfolio-title">Zenith Living</h4>
+              <p class="small text-muted flex-grow-1">High-end architectural portal offering immersive digital walkthroughs for prime coastal properties.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary-subtle">
+                <span class="fw-bold text-primary small">3.8x Lead Increase</span>
+                <button type="button" class="btn btn-sm btn-nexa-outline" data-bs-toggle="modal" data-bs-target="#projectDetailModal">
+                  <span>View Case Study</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: HyperCart Logistics -->
+        <div class="col-md-6 col-lg-4 portfolio-item reveal reveal-delay-2" data-category="ecommerce saas">
+          <div class="portfolio-card"
+               data-title="HyperCart Logistics"
+               data-badge="Logistics &amp; E-Commerce"
+               data-client="HyperCart Global Courier"
+               data-deliverable="Smart Fleet Dispatch &amp; Route Optimization Engine"
+               data-desc="Intelligent last-mile delivery and autonomous drone tracking system calculating optimal dynamic delivery paths across major urban transit networks."
+               data-tech="Node.js, WebSockets, OpenStreetMap, Redis Geo, Vue 3, GraphQL"
+               data-metric="-18% Delivery Time"
+               data-image="assets/images/project-hypercart.svg">
+            <div class="portfolio-image-wrapper">
+              <span class="portfolio-badge">Supply Chain</span>
+              <img src="assets/images/project-hypercart.svg" alt="HyperCart Logistics Dashboard" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">E-Commerce</span>
+                <span class="portfolio-tag">SaaS &amp; Cloud</span>
+                <span class="portfolio-tag">Smart Routing</span>
+              </div>
+              <h4 class="portfolio-title">HyperCart Logistics</h4>
+              <p class="small text-muted flex-grow-1">Live tracking and dispatch application coordinating 18,000+ daily couriers with 99.4% on-time fulfillment.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary-subtle">
+                <span class="fw-bold text-primary small">99.4% On-Time</span>
+                <button type="button" class="btn btn-sm btn-nexa-outline" data-bs-toggle="modal" data-bs-target="#projectDetailModal">
+                  <span>View Case Study</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Impact Metrics Section -->
+  <section class="py-5 bg-body-tertiary">
+    <div class="container py-4">
+      <div class="section-header text-center reveal">
+        <div class="nexa-badge mb-2">
+          <i class="bi bi-graph-up-arrow"></i>
+          <span>Impact By The Numbers</span>
+        </div>
+        <h2 class="section-title">Measurable Business Outcomes</h2>
+        <p class="section-desc">Our software doesn't just look phenomenal; it moves the needle on critical revenue metrics.</p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3 reveal">
+          <div class="p-4 rounded-4 border bg-surface">
+            <div class="h2 fw-bold text-primary mb-1">3.4x</div>
+            <div class="small text-muted">Average Conversion Lift</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 reveal reveal-delay-1">
+          <div class="p-4 rounded-4 border bg-surface">
+            <div class="h2 fw-bold text-primary mb-1">68%</div>
+            <div class="small text-muted">Page Load Acceleration</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 reveal reveal-delay-2">
+          <div class="p-4 rounded-4 border bg-surface">
+            <div class="h2 fw-bold text-primary mb-1">$450M+</div>
+            <div class="small text-muted">Transactions Processed</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 reveal reveal-delay-3">
+          <div class="p-4 rounded-4 border bg-surface">
+            <div class="h2 fw-bold text-primary mb-1">40+</div>
+            <div class="small text-muted">Design &amp; Code Awards</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="py-5 my-5">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="badge bg-white text-primary px-3 py-2 rounded-pill fw-bold mb-3">YOUR NEXT SUCCESS STORY</span>
+            <h2 class="display-6 fw-bold mb-3 text-white">Ready to see your project featured here?</h2>
+            <p class="lead mb-0 text-white-50">
+              Let's engineer a solution that sets your brand apart in today's competitive landscape.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html" class="btn btn-nexa-white btn-lg">
+              <span>Start Your Project</span>
+              <i class="bi bi-arrow-right text-primary"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 rounded-4 shadow-lg overflow-hidden">
+        <div class="modal-header border-bottom border-secondary-subtle">
+          <h5 class="modal-title fw-bold" id="modalProjectTitle">Project Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <img id="modalProjectImage" src="" alt="Project Preview" class="img-fluid rounded-3 mb-4 w-100 shadow-sm">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <h6 class="text-primary fw-bold text-uppercase small" id="modalProjectCategory">Category</h6>
+              <p class="text-muted" id="modalProjectDescription">Detailed project description goes here.</p>
+              <div class="mt-3">
+                <span class="fw-semibold">Technologies Used:</span>
+                <p class="text-muted small mt-1" id="modalProjectTech">React, Node, Cloud</p>
+              </div>
+            </div>
+            <div class="col-md-4 border-start ps-md-4">
+              <div class="mb-3">
+                <div class="small text-muted">Client</div>
+                <div class="fw-bold" id="modalProjectClient">Client Name</div>
+              </div>
+              <div class="mb-3">
+                <div class="small text-muted">Deliverable</div>
+                <div class="fw-bold" id="modalProjectDeliverable">Deliverable</div>
+              </div>
+              <div class="mb-3">
+                <div class="small text-muted">Key Metric Impact</div>
+                <div class="badge bg-success-subtle text-success fs-6 fw-bold" id="modalProjectMetric">+200% Growth</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-secondary-subtle">
+          <a href="contact.html" class="btn btn-nexa-primary">
+            <span>Inquire About Similar Project</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Footer -->
+  <footer class="nexa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand">
+            <img src="assets/favicon.svg" alt="Nexa Agency" width="36" height="36">
+            <span>NEXA<span class="gradient-text">.AGENCY</span></span>
+          </a>
+          <p class="mb-4">
+            A forward-thinking digital agency specialized in bespoke web applications, high-converting interfaces, and resilient software infrastructure.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5 class="footer-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-3">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Front-End Development</a></li>
+            <li><a href="services.html">UI/UX Architecture</a></li>
+            <li><a href="services.html">E-Commerce Solutions</a></li>
+            <li><a href="services.html">Website Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer-title">Stay Connected</h5>
+          <p class="small mb-3">Subscribe to our newsletter for quarterly tech insights, case studies, and design patterns.</p>
+          <form class="newsletter-form mb-3">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="work@company.com" required aria-label="Work Email">
+              <button class="btn btn-nexa-primary" type="submit" aria-label="Subscribe">
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </div>
+          </form>
+          <div class="d-flex align-items-center gap-2 small text-muted">
+            <span class="badge bg-success-subtle text-success p-1 rounded-circle"><i class="bi bi-check"></i></span>
+            <span>All systems operational • 99.99% SLA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 Nexa Agency Inc. All rights reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="about.html" class="text-muted small">Privacy Policy</a>
+          <a href="about.html" class="text-muted small">Terms of Service</a>
+          <a href="contact.html" class="text-muted small">Security &amp; Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Main Custom Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

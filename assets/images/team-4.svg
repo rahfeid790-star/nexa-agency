@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none">
+  <defs>
+    <linearGradient id="avatar-bg-4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ring-4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="24" fill="url(#avatar-bg-4)"/>
+  <circle cx="150" cy="150" r="115" stroke="url(#ring-4)" stroke-width="3" stroke-dasharray="6 4" stroke-opacity="0.4"/>
+  <!-- Hair bun & silhouette -->
+  <circle cx="150" cy="65" r="24" fill="#1e293b"/>
+  <path d="M70 270 C70 220, 105 200, 150 200 C195 200, 230 220, 230 270 Z" fill="#047857"/>
+  <path d="M130 200 L150 240 L170 200 Z" fill="#ecfdf5"/>
+  <rect x="135" y="165" width="30" height="40" rx="6" fill="#fbcfe8"/>
+  <ellipse cx="150" cy="132" rx="40" ry="46" fill="#fdf2f8"/>
+  <path d="M110 115 C120 75, 180 75, 190 115 C180 90, 120 90, 110 115 Z" fill="#1e293b"/>
+  <circle cx="134" cy="128" r="3.5" fill="#0f172a"/>
+  <circle cx="166" cy="128" r="3.5" fill="#0f172a"/>
+  <path d="M138 152 Q150 160 162 152" stroke="#be185d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

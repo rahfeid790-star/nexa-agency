@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none">
+  <defs>
+    <linearGradient id="avatar-bg-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e3a5a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ring-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="24" fill="url(#avatar-bg-2)"/>
+  <circle cx="150" cy="150" r="115" stroke="url(#ring-2)" stroke-width="3" stroke-dasharray="6 4" stroke-opacity="0.4"/>
+  <!-- Hair back -->
+  <path d="M100 130 C100 70, 200 70, 200 130 C210 200, 200 240, 195 250 L105 250 C100 240, 90 200, 100 130 Z" fill="#1e293b"/>
+  <!-- Shoulders / Blazer -->
+  <path d="M70 270 C70 220, 105 200, 150 200 C195 200, 230 220, 230 270 Z" fill="#0284c7"/>
+  <path d="M130 200 L150 245 L170 200 Z" fill="#ffffff"/>
+  <!-- Neck -->
+  <rect x="135" y="165" width="30" height="40" rx="6" fill="#fed7aa"/>
+  <!-- Face -->
+  <ellipse cx="150" cy="135" rx="40" ry="46" fill="#ffedd5"/>
+  <!-- Hair Front -->
+  <path d="M110 120 C115 80, 150 70, 190 85 C190 115, 175 110, 170 120 C165 95, 140 90, 110 120 Z" fill="#1e293b"/>
+  <!-- Eyes & Eyebrows -->
+  <circle cx="134" cy="130" r="3.5" fill="#0f172a"/>
+  <circle cx="166" cy="130" r="3.5" fill="#0f172a"/>
+  <path d="M127 122 Q134 118 141 122" stroke="#334155" stroke-width="2" fill="none"/>
+  <path d="M159 122 Q166 118 173 122" stroke="#334155" stroke-width="2" fill="none"/>
+  <!-- Smile -->
+  <path d="M138 155 Q150 165 162 155" stroke="#e11d48" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

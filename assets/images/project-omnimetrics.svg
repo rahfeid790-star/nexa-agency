@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bg-grad-4" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-grad-4)" rx="16"/>
+  <circle cx="650" cy="100" r="160" fill="#818cf8" fill-opacity="0.12" filter="blur(60px)"/>
+  <circle cx="200" cy="400" r="140" fill="#3b82f6" fill-opacity="0.15" filter="blur(60px)"/>
+
+  <g filter="url(#shadow4)">
+    <rect x="50" y="40" width="700" height="420" rx="12" fill="#0b0f19" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <!-- Top bar -->
+    <rect x="50" y="40" width="700" height="44" rx="12" fill="#182234"/>
+    <circle cx="76" cy="62" r="5" fill="#ef4444"/>
+    <circle cx="94" cy="62" r="5" fill="#f59e0b"/>
+    <circle cx="112" cy="62" r="5" fill="#10b981"/>
+    <text x="400" y="67" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">omnimetrics.io/clusters/us-east-prod</text>
+
+    <!-- Cluster Nodes Overview -->
+    <g transform="translate(80, 105)">
+      <rect width="640" height="90" rx="8" fill="#141c2e" stroke="rgba(129,140,248,0.2)"/>
+      <text x="25" y="32" fill="#818cf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">INFRASTRUCTURE HEALTH (32 NODES ACTIVE)</text>
+      <text x="25" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="700">99.999% SLA</text>
+      <text x="180" y="65" fill="#10b981" font-family="system-ui, sans-serif" font-size="12">● Zero Packet Loss</text>
+      <text x="330" y="65" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12">● 4.2M req/sec</text>
+      <text x="480" y="65" fill="#a855f7" font-family="system-ui, sans-serif" font-size="12">● Autoscaling: Idle</text>
+    </g>
+
+    <!-- Multi Column Analytics -->
+    <g transform="translate(80, 215)">
+      <!-- Left: Telemetry Bar Chart -->
+      <rect width="310" height="225" rx="8" fill="#141c2e" stroke="rgba(255,255,255,0.06)"/>
+      <text x="20" y="30" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Throughput By Microservice</text>
+      <!-- Bars -->
+      <g transform="translate(20, 55)">
+        <text x="0" y="15" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Auth Svc</text>
+        <rect x="75" y="4" width="180" height="14" rx="4" fill="#3b82f6"/>
+        <text x="265" y="15" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10">920k</text>
+
+        <text x="0" y="45" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Gateway</text>
+        <rect x="75" y="34" width="160" height="14" rx="4" fill="#818cf8"/>
+        <text x="245" y="45" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10">810k</text>
+
+        <text x="0" y="75" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Kafka Bus</text>
+        <rect x="75" y="64" width="195" height="14" rx="4" fill="#06b6d4"/>
+        <text x="278" y="75" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10">1.2M</text>
+
+        <text x="0" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">DB Proxy</text>
+        <rect x="75" y="94" width="130" height="14" rx="4" fill="#a855f7"/>
+        <text x="215" y="105" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10">640k</text>
+
+        <text x="0" y="135" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Redis Cache</text>
+        <rect x="75" y="124" width="170" height="14" rx="4" fill="#10b981"/>
+        <text x="255" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10">880k</text>
+      </g>
+    </g>
+
+    <!-- Right: Donut Chart & Incident Log -->
+    <g transform="translate(410, 215)">
+      <rect width="310" height="225" rx="8" fill="#141c2e" stroke="rgba(255,255,255,0.06)"/>
+      <text x="20" y="30" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Resource Distribution</text>
+      <!-- Donut Circle -->
+      <circle cx="80" cy="115" r="45" fill="none" stroke="#1e293b" stroke-width="16"/>
+      <circle cx="80" cy="115" r="45" fill="none" stroke="#3b82f6" stroke-width="16" stroke-dasharray="160 282" stroke-dashoffset="0"/>
+      <circle cx="80" cy="115" r="45" fill="none" stroke="#818cf8" stroke-width="16" stroke-dasharray="80 282" stroke-dashoffset="-160"/>
+      <text x="80" y="120" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">58%</text>
+
+      <g transform="translate(150, 75)">
+        <circle cx="6" cy="6" r="5" fill="#3b82f6"/>
+        <text x="20" y="10" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11">Compute (Kubernetes)</text>
+        <circle cx="6" cy="30" r="5" fill="#818cf8"/>
+        <text x="20" y="34" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11">Memory (RAM 1.2TB)</text>
+        <circle cx="6" cy="54" r="5" fill="#1e293b"/>
+        <text x="20" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Idle Reserve (22%)</text>
+      </g>
+
+      <rect x="20" y="175" width="270" height="34" rx="6" fill="#0b0f19"/>
+      <text x="35" y="196" fill="#10b981" font-family="system-ui, sans-serif" font-size="11" font-weight="500">✔ All 4 regions healthy • Latency &lt; 8ms</text>
+    </g>
+  </g>
+</svg>
